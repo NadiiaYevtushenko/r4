@@ -1,42 +1,59 @@
+/* Головний контейнер всередині #root — центрує весь контент */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
   padding: 2rem;
-  text-align: center;
+  font-family: system-ui, sans-serif;
 }
 
+/* Обгортка контенту */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 720px;
+  width: 100%;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Заголовки */
+h1, h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Картка або блок секції */
+.card {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Логотип (якщо використовуєш) */
 .logo {
   height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  margin-bottom: 1rem;
+  transition: filter 300ms ease;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 1rem #4caf50);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
+/* Додатковий текст */
 .read-the-docs {
-  color: #888;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
 }

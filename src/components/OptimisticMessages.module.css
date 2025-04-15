@@ -1,0 +1,77 @@
+.container {
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.label {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.input {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.button {
+    align-self: flex-start;
+    padding: 0.5rem 1.2rem;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.list {
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    background-color: #fff;
+    border-left: 4px solid #4caf50;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.pending {
+    margin-left: 1rem;
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+}

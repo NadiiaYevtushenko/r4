@@ -5,8 +5,7 @@ import styles from './UsersComponent.module.css'
 
 
 const UsersComponent = () => {
-    const users: UserInterface[] = use(fetchData)
-    /*React тут бере дані з сервера і зберігає в змінну users.*/
+    const users: UserInterface[] = use(fetchData) /*React тут бере дані з сервера і зберігає в змінну users.*/
 
     return (
         <div className={styles.container}>
